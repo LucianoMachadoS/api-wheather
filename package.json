@@ -1,19 +1,19 @@
 {
-  "name": "weather-forecast",
+  "name": "api-wheather",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "dev": "tsx watch src/server.ts",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "prisma generate",
+    "start": "tsx src/server.ts"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "@types/node": "^22.13.9",
-    "prisma": "^6.4.1",
-    "tsx": "^4.19.3",
     "typescript": "^5.8.2"
   },
   "dependencies": {
@@ -24,6 +24,8 @@
     "bcryptjs": "^3.0.2",
     "dotenv": "^16.5.0",
     "fastify": "^5.2.1",
+    "prisma": "^6.4.1",
+    "tsx": "^4.19.3",
     "zod": "^3.24.2"
   }
 }
